@@ -80,7 +80,7 @@ const StudyBrowser = ({
   return (
     <React.Fragment>
       <div
-        className="w-100 border-secondary-light bg-primary-dark flex h-20 flex-col items-center justify-center gap-2 border-b p-4"
+        className="w-100 border-secondary-dark bg-primary-dark flex h-20 flex-col items-center justify-center gap-2 border-b p-4"
         data-cy={'studyBrowser-panel'}
       >
         {/* TODO Revisit design of LegacyButtonGroup later - for now use LegacyButton for its children.*/}

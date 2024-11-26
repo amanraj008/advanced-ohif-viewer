@@ -71,6 +71,7 @@ const extensionDependencies = {
   '@ohif/extension-cornerstone-dicom-rt': '^3.0.0',
   '@ohif/extension-dicom-pdf': '^3.0.1',
   '@ohif/extension-dicom-video': '^3.0.1',
+  Report: '^0.0.1',
 };
 
 function modeFactory({ modeConfiguration }) {
@@ -181,7 +182,7 @@ function modeFactory({ modeConfiguration }) {
             id: ohif.layout,
             props: {
               leftPanels: [tracked.thumbnailList],
-              rightPanels: [cornerstone.segmentation, tracked.measurements],
+              rightPanels: [cornerstone.segmentation, tracked.measurements, 'Report.panelModule.Report'],
               rightPanelClosed: true,
               viewports: [
                 {

@@ -42,7 +42,7 @@ window.config = {
       configuration: {
         friendlyName: 'AWS backed smaro orthanc server',
         name: 'smaro',
-        wadoUriRoot: '/wado',
+        wadoUriRoot: 'https://pacs.smaro.app/wado',
         qidoRoot: 'https://pacs.smaro.app/dicom-web',
         wadoRoot: 'https://pacs.smaro.app/dicom-web',
         qidoSupportsIncludeField: false,

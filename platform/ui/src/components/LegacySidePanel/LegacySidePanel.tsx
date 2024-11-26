@@ -314,7 +314,7 @@ function _getMoreThanOneTabLayout(
     <div
       className="flex-static collapse-sidebar relative"
       style={{
-        backgroundColor: '#06081f',
+        backgroundColor: '#110E15',
       }}
     >
       <div className="w-full">

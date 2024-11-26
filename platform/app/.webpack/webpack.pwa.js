@@ -78,6 +78,10 @@ module.exports = (env, argv) => {
         // Hoisted Yarn Workspace Modules
         path.resolve(__dirname, '../../../node_modules'),
         SRC_DIR,
+        path.resolve(
+          __dirname,
+          '/Users/amantoppo/Desktop/office-work/deployment/advanced-ohif-viewer/extensions/ReportExtension/Report/node_modules'
+        ),
       ],
     },
     plugins: [
