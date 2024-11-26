@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ErrorBoundary } from '@ohif/ui-next';
+import RestrictedAccess from './RestrictedAccess';
 
 // Route Components
 import DataSourceWrapper from './DataSourceWrapper';
@@ -108,10 +109,19 @@ const createRoutes = ({
     props: { children: WorkList, servicesManager, extensionManager },
   };
 
+  const AdminWorkListRoute = {
+    path: '/access/studies',
+    children: DataSourceWrapper,
+    private: true,
+    props: { children: WorkList, servicesManager, extensionManager },
+  };
+
+
   const customRoutes = customizationService.getGlobalCustomization('customRoutes');
   const allRoutes = [
     ...routes,
     ...(showStudyList ? [WorkListRoute] : []),
+    ...(showStudyList ? [AdminWorkListRoute] : []),
     ...(customRoutes?.routes || []),
     ...bakedInRoutes,
     customRoutes?.notFoundRoute || notFoundRoute,
