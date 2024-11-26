@@ -29,10 +29,10 @@ module.exports = {
       },
 
       primary: {
-        light: '#5acce6',
-        main: '#0944b3',
-        dark: '#090c29',
-        active: '#348cfd',
+        light: '#F8E4F1',
+        main: '#7851A9',
+        dark: '#110E15',
+        active: '#b794f4',
       },
       inputfield: {
         main: '#3a3f99',
@@ -44,7 +44,7 @@ module.exports = {
       secondary: {
         light: '#3a3f99',
         main: '#2b166b',
-        dark: '#041c4a',
+        dark: '#211720',
         active: '#1f1f27',
       },
 
@@ -164,7 +164,7 @@ module.exports = {
       blue: {
         100: '#ebf8ff',
         200: '#bee3f8',
-        300: '#90cdf4',
+        300: '#e9d8fd',
         400: '#63b3ed',
         500: '#4299e1',
         600: '#3182ce',
