@@ -1,5 +1,6 @@
 import { id } from './id';
 import PatientReportTab from './Report';
+import { FaRegEdit } from 'react-icons/fa';
 
 /**
  * You can remove any of the following modules if you don't need them.
@@ -28,7 +29,7 @@ export default {
     return [
       {
         name: 'Report',
-        iconName: 'logo-ohif-small',
+        iconName: 'Show',
         iconLabel: 'Report',
         label: 'Report',
         component: PatientReportTab,

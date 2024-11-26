@@ -50,32 +50,32 @@ module.exports = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: '#7851A9',
+          foreground: '#7851A9',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: '#2b166b',
+          foreground: '#2b166b',
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+          DEFAULT: '#3a3f99',
+          foreground: '#3a3f99',
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          DEFAULT: '#110E15',
+          foreground: '#b794f4',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: '#110E15',
+          foreground: '#110E15',
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
+          DEFAULT: '#211720',
+          foreground: '#211720',
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: '#211720',
+          foreground: '#211720',
         },
       },
       borderRadius: {
@@ -98,16 +98,16 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       bkg: {
-        low: '#050615',
+        low: '#110E15',
         med: '#090C29',
-        full: '#041C4A',
+        full: '#110E15',
       },
       info: {
         primary: '#FFFFFF',
-        secondary: '#7BB2CE',
+        secondary: '#110E15',
       },
       actions: {
-        primary: '#348CFD',
+        primary: '#b794f4',
         highlight: '#5ACCE6',
         hover: 'rgba(52, 140, 253, 0.2)',
       },

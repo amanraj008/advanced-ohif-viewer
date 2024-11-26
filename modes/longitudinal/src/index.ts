@@ -105,13 +105,20 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.addButtons([...toolbarButtons, ...moreTools]);
       toolbarService.createButtonSection('primary', [
         'MeasurementTools',
+        'EllipticalROI',
+        'RectangleROI',
         'Zoom',
+        'Magnify',
         'Pan',
         'TrackballRotate',
         'WindowLevel',
+        'StackScroll',
+        'Probe',
         'Capture',
         'Layout',
         'Crosshairs',
+        'Cine',
+        'Angle',
         'MoreTools',
       ]);
 
@@ -182,7 +189,11 @@ function modeFactory({ modeConfiguration }) {
             id: ohif.layout,
             props: {
               leftPanels: [tracked.thumbnailList],
-              rightPanels: [cornerstone.segmentation, tracked.measurements, 'Report.panelModule.Report'],
+              rightPanels: [
+                cornerstone.segmentation,
+                'Report.panelModule.Report',
+                tracked.measurements,
+              ],
               rightPanelClosed: true,
               viewports: [
                 {

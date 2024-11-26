@@ -125,14 +125,14 @@ const moreTools = [
             },
           ],
         }),
-        // createButton({
-        //   id: 'StackScroll',
-        //   icon: 'tool-stack-scroll',
-        //   label: 'Stack Scroll',
-        //   tooltip: 'Stack Scroll',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: 'evaluate.cornerstoneTool',
-        // }),
+        createButton({
+          id: 'StackScroll',
+          icon: 'tool-stack-scroll',
+          label: 'Stack Scroll',
+          tooltip: 'Stack Scroll',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
         createButton({
           id: 'invert',
           icon: 'tool-invert',
@@ -147,14 +147,14 @@ const moreTools = [
             },
           ],
         }),
-        // createButton({
-        //   id: 'Probe',
-        //   icon: 'tool-probe',
-        //   label: 'Probe',
-        //   tooltip: 'Probe',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: 'evaluate.cornerstoneTool',
-        // }),
+        createButton({
+          id: 'Probe',
+          icon: 'tool-probe',
+          label: 'Probe',
+          tooltip: 'Probe',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
         createButton({
           id: 'Cine',
           icon: 'tool-cine',
@@ -169,14 +169,14 @@ const moreTools = [
             },
           ],
         }),
-        // createButton({
-        //   id: 'Angle',
-        //   icon: 'tool-angle',
-        //   label: 'Angle',
-        //   tooltip: 'Angle',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: 'evaluate.cornerstoneTool',
-        // }),
+        createButton({
+          id: 'Angle',
+          icon: 'tool-angle',
+          label: 'Angle',
+          tooltip: 'Angle',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
         createButton({
           id: 'CobbAngle',
           icon: 'icon-tool-cobb-angle',
@@ -185,20 +185,20 @@ const moreTools = [
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
         }),
-        // createButton({
-        //   id: 'Magnify',
-        //   icon: 'tool-magnify',
-        //   label: 'Zoom-in',
-        //   tooltip: 'Zoom-in',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: [
-        //     'evaluate.cornerstoneTool',
-        //     {
-        //       name: 'evaluate.viewport.supported',
-        //       unsupportedViewportTypes: ['video'],
-        //     },
-        //   ],
-        // }),
+        createButton({
+          id: 'Magnify',
+          icon: 'tool-magnify',
+          label: 'Zoom-in',
+          tooltip: 'Zoom-in',
+          commands: setToolActiveToolbar,
+          evaluate: [
+            'evaluate.cornerstoneTool',
+            {
+              name: 'evaluate.viewport.supported',
+              unsupportedViewportTypes: ['video'],
+            },
+          ],
+        }),
         createButton({
           id: 'CalibrationLine',
           icon: 'tool-calibration',

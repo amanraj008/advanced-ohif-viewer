@@ -82,6 +82,11 @@ module.exports = (env, argv) => {
           __dirname,
           '/Users/amantoppo/Desktop/office-work/deployment/advanced-ohif-viewer/extensions/ReportExtension/Report/node_modules'
         ),
+        path.resolve(
+          __dirname,
+          'C:/Users/yatha/OneDrive/Desktop/SLT work/advanced-ohif-viewer/extensions/ReportExtension/Report/node_modules'
+        ),
+        path.resolve(__dirname, 'extensions/ReportExtension/Report/node_modules'),
       ],
     },
     plugins: [

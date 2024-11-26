@@ -57,22 +57,22 @@ const toolbarButtons: Button[] = [
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
         }),
-        // createButton({
-        //   id: 'EllipticalROI',
-        //   icon: 'tool-ellipse',
-        //   label: 'Ellipse',
-        //   tooltip: 'Ellipse ROI',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: 'evaluate.cornerstoneTool',
-        // }),
-        // createButton({
-        //   id: 'RectangleROI',
-        //   icon: 'tool-rectangle',
-        //   label: 'Rectangle',
-        //   tooltip: 'Rectangle ROI',
-        //   commands: setToolActiveToolbar,
-        //   evaluate: 'evaluate.cornerstoneTool',
-        // }),
+        createButton({
+          id: 'EllipticalROI',
+          icon: 'tool-ellipse',
+          label: 'Ellipse',
+          tooltip: 'Ellipse ROI',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
+        createButton({
+          id: 'RectangleROI',
+          icon: 'tool-rectangle',
+          label: 'Rectangle',
+          tooltip: 'Rectangle ROI',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
         createButton({
           id: 'CircleROI',
           icon: 'tool-circle',
@@ -106,39 +106,6 @@ const toolbarButtons: Button[] = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
       ],
-    },
-  },
-  {
-    id: 'EllipticalROI',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-ellipse',
-      label: 'Ellipse',
-      tooltip: 'Ellipse ROI',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
-    },
-  },
-  {
-    id: 'Magnify',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-magnify',
-      label: 'Zoom-in',
-      tooltip: 'Zoom-in',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
-    },
-  },
-  {
-    id: 'RectangleROI',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-rectangle',
-      label: 'Rectangle',
-      tooltip: 'Rectangle ROI',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
     },
   },
   {
@@ -181,31 +148,6 @@ const toolbarButtons: Button[] = [
     },
   },
   {
-    id: 'Cine',
-    icon: 'tool-cine',
-    label: 'Cine',
-    tooltip: 'Cine',
-    commands: 'toggleCine',
-    evaluate: [
-      'evaluate.cine',
-      {
-        name: 'evaluate.viewport.supported',
-        unsupportedViewportTypes: ['volume3d'],
-      },
-    ],
-  },
-  {
-    id: 'Angle',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-angle',
-      label: 'Angle',
-      tooltip: 'Angle',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
-    },
-  },
-  {
     id: 'TrackballRotate',
     uiType: 'ohif.radioGroup',
     props: {
@@ -242,28 +184,6 @@ const toolbarButtons: Button[] = [
       rows: 3,
       columns: 4,
       evaluate: 'evaluate.action',
-    },
-  },
-  {
-    id: 'StackScroll',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-stack-scroll',
-      label: 'Stack Scroll',
-      tooltip: 'Stack Scroll',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
-    },
-  },
-  {
-    id: 'Probe',
-    uiType: 'ohif.radioGroup',
-    props: {
-      icon: 'tool-probe',
-      label: 'Probe',
-      tooltip: 'Probe',
-      commands: setToolActiveToolbar,
-      evaluate: 'evaluate.cornerstoneTool',
     },
   },
   {

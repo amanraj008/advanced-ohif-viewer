@@ -153,6 +153,9 @@ const SidePanel = ({
   expandedWidth = 280,
   onActiveTabIndexChange,
 }) => {
+  if (side === 'right' && activeTabIndexProp === 1) {
+    expandedWidth = expandedWidth * 3;
+  }
   const [panelOpen, setPanelOpen] = useState(activeTabIndexProp !== null);
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 

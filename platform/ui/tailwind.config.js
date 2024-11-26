@@ -49,7 +49,7 @@ module.exports = {
       },
 
       indigo: {
-        dark: '#0b1a42',
+        dark: '#110E15',
       },
 
       common: {
@@ -60,9 +60,9 @@ module.exports = {
         active: '#2c3074',
       },
       bkg: {
-        low: '#050615',
-        med: '#090C29',
-        full: '#041C4A',
+        low: '#110E15',
+        med: '#110E15',
+        full: '#211720',
       },
       info: {
         primary: '#FFFFFF',
@@ -79,9 +79,9 @@ module.exports = {
       },
 
       customblue: {
-        10: '#0A163F',
-        20: '#0B1F54',
-        30: '#09286e',
+        10: '#211720',
+        20: '#211720',
+        30: '#211720',
         40: '#0E307F',
         50: '#0F3A94',
         80: '#1454D4',

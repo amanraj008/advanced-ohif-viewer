@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code } from 'lucide-react';
+import { FaRegEdit } from 'react-icons/fa';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -1540,7 +1541,7 @@ export const Icons = {
       </g>
     </svg>
   ),
-  MissingIcon: (props: IconProps) => <div>Missing icon</div>,
+  MissingIcon: (props: IconProps) => <FaRegEdit />,
   Series: (props: IconProps) => (
     <svg
       width="24px"
