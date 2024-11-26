@@ -8,20 +8,22 @@ export default function getModalities(Modality, ModalitiesInStudy) {
     Value: [],
   };
 
-  // Rare case, depending on the DICOM server we are using, but sometimes,
-  // modalities.Value is undefined or null.
+  // Ensure modalities.Value is initialized properly
   modalities.Value = modalities.Value || [];
 
   if (ModalitiesInStudy) {
-    if (modalities.vr && modalities.vr === ModalitiesInStudy.vr) {
-      for (let i = 0; i < ModalitiesInStudy.Value.length; i++) {
-        const value = ModalitiesInStudy.Value[i];
-        if (modalities.Value.indexOf(value) === -1) {
-          modalities.Value.push(value);
+    // Check if ModalitiesInStudy.Value exists and is an array
+    if (ModalitiesInStudy.Value && Array.isArray(ModalitiesInStudy.Value)) {
+      if (modalities.vr && modalities.vr === ModalitiesInStudy.vr) {
+        for (let i = 0; i < ModalitiesInStudy.Value.length; i++) {
+          const value = ModalitiesInStudy.Value[i];
+          if (modalities.Value.indexOf(value) === -1) {
+            modalities.Value.push(value);
+          }
         }
+      } else {
+        return ModalitiesInStudy;
       }
-    } else {
-      return ModalitiesInStudy;
     }
   }
 

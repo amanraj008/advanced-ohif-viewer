@@ -40,11 +40,11 @@ window.config = {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
       sourceName: 'dicomweb',
       configuration: {
-        friendlyName: 'AWS S3 Static wado server',
-        name: 'aws',
-        wadoUriRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
-        qidoRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
-        wadoRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
+        friendlyName: 'AWS backed smaro orthanc server',
+        name: 'smaro',
+        wadoUriRoot: '/wado',
+        qidoRoot: 'https://pacs.smaro.app/dicom-web',
+        wadoRoot: 'https://pacs.smaro.app/dicom-web',
         qidoSupportsIncludeField: false,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
@@ -54,7 +54,7 @@ window.config = {
         staticWado: true,
         singlepart: 'bulkdata,video',
         // whether the data source should use retrieveBulkData to grab metadata,
-        // and in case of relative path, what would it be relative to, options
+        // and in case of a relative path, what would it be relative to, options
         // are in the series level or study level (some servers like series some study)
         bulkDataURI: {
           enabled: true,
