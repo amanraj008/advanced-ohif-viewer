@@ -44,12 +44,6 @@ function Header({
 }: HeaderProps): ReactNode {
   const { t } = useTranslation('Header');
 
-  const onClickReturn = () => {
-    if (isReturnEnabled && onClickReturnButton) {
-      onClickReturnButton();
-    }
-  };
-
   return (
     <NavBar
       isSticky={isSticky}
@@ -62,12 +56,10 @@ function Header({
               'mr-3 inline-flex items-center',
               isReturnEnabled && 'cursor-pointer'
             )}
-            onClick={onClickReturn}
             data-cy="return-to-work-list"
           >
-            {isReturnEnabled && <Icons.ChevronPatient className="text-primary-active w-8" />}
             <div className="ml-1">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
+              <h1 className="text-xl font-bold text-white">Smaro Viewer</h1>
             </div>
           </div>
         </div>

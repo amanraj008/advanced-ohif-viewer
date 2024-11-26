@@ -12,7 +12,7 @@ import {
 import { ScrollArea } from '../ScrollArea/ScrollArea';
 import { Icons } from '../Icons';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = true;
 
 interface ErrorBoundaryError extends Error {
   message: string;
@@ -70,50 +70,7 @@ Stack: ${error.stack}
     return null;
   }
 
-  return (
-    <>
-      <Dialog
-        open={showDetails}
-        onOpenChange={setShowDetails}
-      >
-        <DialogContent className="border-input h-[50vh] w-[90vw] border-2 sm:max-w-[900px]">
-          <DialogHeader>
-            <DialogTitle className="text-muted-foreground flex justify-between text-xl">
-              <div className="flex items-center">{title}</div>
-              <button
-                onClick={() => {
-                  copyErrorDetails();
-                  setShowDetails(false);
-                }}
-                className="text-aqua-pale hover:text-aqua-pale/80 flex items-center gap-2 rounded bg-gray-800 px-4 py-2 font-light"
-              >
-                <Icons.Code className="h-4 w-4" />
-                {t('Copy Details')}
-              </button>
-            </DialogTitle>
-
-            <DialogDescription className="text-lg">{subtitle}</DialogDescription>
-          </DialogHeader>
-
-          <ScrollArea className="h-[100%]">
-            <div className="space-y-4 pr-4 font-mono text-base">
-              <div className="space-y-4">
-                <p className="text-aqua-pale break-words text-lg">
-                  {t('Context')}: {context}
-                </p>
-                <p className="text-aqua-pale break-words text-lg">
-                  {t('Error Message')}: {error.message}
-                </p>
-                <pre className="text-aqua-pale whitespace-pre-wrap break-words rounded bg-gray-900 p-4">
-                  Stack: {error.stack}
-                </pre>
-              </div>
-            </div>
-          </ScrollArea>
-        </DialogContent>
-      </Dialog>
-    </>
-  );
+  return;
 };
 
 const ErrorBoundary = ({
