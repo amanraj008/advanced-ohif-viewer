@@ -95,20 +95,10 @@ const ErrorBoundary = ({
 
     const handleError = (event: ErrorEvent) => {
       event.preventDefault();
-      clearTimeout(errorTimeout);
-      errorTimeout = setTimeout(() => {
-        setError(event.error);
-        onErrorHandler(event.error, null);
-      }, 100);
     };
 
     const handleRejection = (event: PromiseRejectionEvent) => {
       event.preventDefault();
-      clearTimeout(errorTimeout);
-      errorTimeout = setTimeout(() => {
-        setError(event.reason);
-        onErrorHandler(event.reason, null);
-      }, 100);
     };
 
     window.addEventListener('error', handleError);

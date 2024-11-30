@@ -49,14 +49,14 @@ const toolbarButtons: Button[] = [
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
         }),
-        createButton({
-          id: 'ArrowAnnotate',
-          icon: 'tool-annotate',
-          label: 'Annotation',
-          tooltip: 'Arrow Annotate',
-          commands: setToolActiveToolbar,
-          evaluate: 'evaluate.cornerstoneTool',
-        }),
+        // createButton({
+        //   id: 'ArrowAnnotate',
+        //   icon: 'tool-annotate',
+        //   label: 'Annotation',
+        //   tooltip: 'Arrow Annotate',
+        //   commands: setToolActiveToolbar,
+        //   evaluate: 'evaluate.cornerstoneTool',
+        // }),
         // createButton({
         //   id: 'EllipticalROI',
         //   icon: 'tool-ellipse',
@@ -106,6 +106,17 @@ const toolbarButtons: Button[] = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
       ],
+    },
+  },
+  {
+    id: 'ArrowAnnotate',
+    uiType: 'ohif.radioGroup',
+    props: {
+      icon: 'tool-annotate',
+      label: 'Annotation',
+      tooltip: 'Arrow Annotate',
+      commands: setToolActiveToolbar,
+      evaluate: 'evaluate.cornerstoneTool',
     },
   },
   {

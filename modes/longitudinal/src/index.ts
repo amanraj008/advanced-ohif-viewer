@@ -105,6 +105,7 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.addButtons([...toolbarButtons, ...moreTools]);
       toolbarService.createButtonSection('primary', [
         'MeasurementTools',
+        'ArrowAnnotate',
         'EllipticalROI',
         'RectangleROI',
         'Zoom',

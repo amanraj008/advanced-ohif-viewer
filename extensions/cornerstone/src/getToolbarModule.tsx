@@ -1,4 +1,5 @@
 import { Enums } from '@cornerstonejs/tools';
+import { element } from 'prop-types';
 
 const getToggledClassName = (isToggled: boolean) => {
   return isToggled
@@ -307,3 +308,6 @@ function _evaluateToggle({
     className: getToggledClassName(!isOff),
   };
 }
+
+
+
