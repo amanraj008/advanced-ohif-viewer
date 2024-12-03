@@ -104,7 +104,7 @@ const createRoutes = ({
 
   const WorkListRoute = {
     path: '/',
-    children: DataSourceWrapper,
+    children: RestrictedAccess,
     private: true,
     props: { children: WorkList, servicesManager, extensionManager },
   };
@@ -115,7 +115,6 @@ const createRoutes = ({
     private: true,
     props: { children: WorkList, servicesManager, extensionManager },
   };
-
 
   const customRoutes = customizationService.getGlobalCustomization('customRoutes');
   const allRoutes = [
