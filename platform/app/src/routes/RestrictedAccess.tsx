@@ -6,7 +6,7 @@ type Props = OwnProps;
 
 const RestrictedAccess: FunctionComponent<Props> = props => {
   return (
-    <div className="flex min-h-screen content-center items-center justify-center bg-[#45197F] align-middle">
+    <div className="flex h-full w-full content-center items-center justify-center bg-[#45197F] align-middle">
       <div className="mx-auto flex w-[40rem] flex-col items-center rounded-lg bg-white p-8 text-center shadow-lg">
         <h1 className="mb-4 text-2xl font-bold text-red-700">Access Restricted !</h1>
         <p className="mb-6 text-gray-600">
