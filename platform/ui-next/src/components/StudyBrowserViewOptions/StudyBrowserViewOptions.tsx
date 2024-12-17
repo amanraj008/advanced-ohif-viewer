@@ -7,9 +7,9 @@ import {
 } from '../DropdownMenu/DropdownMenu';
 
 export function StudyBrowserViewOptions({ tabs, onSelectTab, activeTabName }: withAppTypes) {
-  const handleTabChange = (tabName: string) => {
-    onSelectTab(tabName);
-  };
+  useEffect(() => {
+    onSelectTab('primary');
+  }, []);
 
   const activeTab = tabs.find(tab => tab.name === activeTabName);
 
