@@ -1,5 +1,4 @@
-// External
-
+// External APP VERSION : 0.0.1
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import i18n from '@ohif/i18n';
