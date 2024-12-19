@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -7,9 +7,9 @@ import {
 } from '../DropdownMenu/DropdownMenu';
 
 export function StudyBrowserViewOptions({ tabs, onSelectTab, activeTabName }: withAppTypes) {
-  useEffect(() => {
-    onSelectTab('primary');
-  }, []);
+  const handleTabChange = (tabName: string) => {
+    onSelectTab(tabName);
+  };
 
   const activeTab = tabs.find(tab => tab.name === activeTabName);
 
