@@ -8,7 +8,7 @@ export const BASE_URL = 'https://api.smaro.app/api';
 export const AWS_BUCKET_URL = 'https://myradonapp.s3.amazonaws.com';
 
 export const api = {
-  get: async (url: string, params?: any) => {
+  get: async (url: string, params?: unknown) => {
     const token = getApiToken();
     url = ensureHTTPS(url);
     const config = {
